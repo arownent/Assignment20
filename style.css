@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 70px;
+    background-color: #77e9a6;
+    color: black;
+}
+.navbar ul{
+    height: 70px;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+ .navbar li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    font-size: larger;
+    font-weight: bold;
+ }
+ .welcome{
+    height: 150px;
+    background-color: blanchedalmond;
+    padding: 15px;
+    line-height: 40px;
+    text-align: center;
+ }
+ .stylebutton{
+    height: 30px;
+    width: 120px;
+    background-color: #77e9a6;
+    border-radius: 5px;
+    font-size: 15px;
+ }
+.services{
+    display: flex;
+    justify-content: space-around;
+    height: 360px;
+    margin-top: 20px;
+}
+.combine{
+    width: 30%;
+    height: 360px;
+    padding: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+.combine img{
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #77e9a6, -3px -3px 3px #77e9a6;
+}
+@keyframes animate{
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale: 0.95;
+    }
+}
+.combine:hover{
+    animation: animate 0.2s linear;
+}
+.joinus{
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.joinusimage{
+    width: 50%;
+}
+.joinusimage img{
+    height: 400px;
+    width: 100%;
+    object-fit: fill;
+    padding: 30px;
+}
+.joinusform{
+    width: 60%;
+    padding: 70px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: large;
+}
+.joinusform input{
+    height: 30px;
+    width: 590px;
+}
+.joinusform textarea{
+    height: 60px;
+    width: 590px;
+}
+.joinusform button{
+    height: 30px;
+    width: 120px;
+    background-color: #77e9a6;
+    border-radius: 5px;
+    font-size: 15px;  
+    margin-left: 250px;
+    margin-top: 10px;  
+}
+@media screen and (max-width: 820px){
+    /* .navbar{
+        height: 100px;
+        width: 100%;
+    }
+    .navbar ul{
+        flex-direction: column;
+    }
+    .navbar li a{
+        margin: 0px;
+    } */
+    .welcome{
+        height: 200px;
+    }
+    .services{
+        flex-direction: column;
+        margin-top: 480px;
+    }
+    .combine{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .joinusimage{
+        display: none;
+    }
+    .joinusform{
+        margin-top: 370px;
+        margin-left: -100px;
+        padding-left: 0px;
+    }
+    .joinusform input{
+        width: 400px;
+    }
+    .joinusform textarea{
+        width: 400px;
+    }
+    .joinusform button{
+        margin-left: 140px;
+        margin-bottom: 60px;
+    }
+}
